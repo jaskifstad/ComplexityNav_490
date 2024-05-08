@@ -1,25 +1,9 @@
-# RelationalGraphLearning
-This repository contains the codes for our paper, which is accepted at IROS 2020. 
-For more details, please refer to the [paper](https://arxiv.org/abs/1909.13165).
+# Characterizing the Complexity of Social Robot Navigation Scenarios
+This repository will contain the code for our paper, including a version of CrowdNav enhanced with features to enable creation of a wider range of more complex scenarios. Check back soon for the code.
 
 
 ## Abstract
-We present a relational graph learning approach for robotic crowd navigation using model-based deep reinforcement 
-learning that plans actions by looking into the future.
-Our approach reasons about the relations between all agents based on their latent features and uses a Graph Convolutional 
-Network to encode higher-order interactions in each agent's state representation, which is subsequently leveraged for 
-state prediction and value estimation.
-The ability to predict human motion allows us to perform multi-step lookahead planning, taking into account the temporal 
-evolution of human crowds.
-We evaluate our approach against a state-of-the-art baseline for crowd navigation and ablations of our model to 
-demonstrate that navigation with our approach is more efficient, results in fewer collisions, and avoids failure cases 
-involving oscillatory and freezing behaviors.
-
-
-
-## Method Overview
-<img src="https://i.imgur.com/8unQNIv.png" width="1000" />
-
+Social robot navigation algorithms are often demonstrated in overly simplified scenarios, prohibiting the extraction of practical insights about their relevance to real-world domains. Our key insight is that an understanding of the inherent complexity of a social robot navigation scenario could help characterize the limitations of existing navigation algorithms and provide actionable directions for improvement. Through an exploration of recent literature, we identify a series of factors contributing to the Complexity of a scenario, disambiguating between contextual and robot-related ones. We then conduct a simulation study investigating how manipulations of contextual factors impact the performance of a variety of navigation algorithms. We find that dense and narrow environments correlate most strongly with performance drops, while the heterogeneity of agent policies and directionality of agents have a less pronounced effect. This motivates a shift towards developing and testing algorithms under higher Complexity settings.
 
 ## Setup
 1. Install [Python-RVO2](https://github.com/sybrenstuvel/Python-RVO2) library
