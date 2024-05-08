@@ -38,11 +38,6 @@ python utils/plot.py data/output/output.log
 ```
 
 
-
-## Video Demo
-[<img src="https://i.imgur.com/SnqVhit.png" width="70%">](https://youtu.be/U3quW30Eu3A)
-
-
 ## Citation
 If you find the codes or paper useful for your research, please cite the following papers:
 ```bibtex
