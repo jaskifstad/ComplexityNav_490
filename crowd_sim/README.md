@@ -1,3 +1,10 @@
+# Training and Tuning
+## MPC and MPPI
+The MPC and MPPI method cost function parameters are tuned via a grid search over the sigma h, s, and r parameters in the range [0.3, 2.1] in intervals of 0.3. The q parameters were fixed manually to (100.0, 1.0, 5.0, 1.0) and kept constant across methods. The additional MPPI parameters (noise covariance diagonal, samples, and horizon) were also tuned using a separate grid search with values (1.0, 2.0, 3.0, 4.0, 5.0), (100, 250, 500, 1000), (3, 4, 5, 6, 7), rejecting combinations that led to a control loop operating slower than 0.25Hz (the simulation timestep). All parameters were tuned in a passing and crossing scenario with 5 ORCA and 5 SFM agents in a 10x10m workspace using 100 trials to calculate metrics.
+
+## RGL
+RGL training was attempted in scenarios with (5, 10, 15) (ORCA, SFM, ORCA and SFM) agents in a 12x12m workspace with circle crossing directionality. We found the training did not converge to a generalized collision avoiding policy in all cases except for the 5 agent ORCA scenario, so that is the model used in experiments.
+
 # Simulation Framework
 ## Environment
 The environment contains n+1 agents. N of them are humans controlled by certain unknown
