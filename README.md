@@ -20,7 +20,7 @@ Then ensure the dependencies for [Pred2Nav](https://github.com/sriyash421/Pred2N
 
 ## Getting Started
 The repository is organized in two parts: crowd_sim/ folder contains the simulation environment and
-crowd_nav/ folder contains codes for training and testing the policies. Details of the simulation framework can be found
+crowd_nav/ folder contains codes for training and testing the policies. Details of the simulation framework and method training and tuning details from the paper can be found
 [here](crowd_sim/README.md).
 
 
