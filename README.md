@@ -47,13 +47,13 @@ The config file in the icra_benchmark directory is set up by default to reproduc
 ## Citation
 If you find the code or paper useful for your research, please cite the following paper:
 ```bibtex
-@misc{stratton2024characterizingcomplexitysocialrobot,
-      title={Characterizing the Complexity of Social Robot Navigation Scenarios}, 
-      author={Andrew Stratton and Kris Hauser and Christoforos Mavrogiannis},
-      year={2024},
-      eprint={2405.11410},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2405.11410}, 
+@ARTICLE{stratton2025complexity,
+  author={Stratton, Andrew and Hauser, Kris and Mavrogiannis, Christoforos},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Characterizing the Complexity of Social Robot Navigation Scenarios}, 
+  year={2025},
+  volume={10},
+  number={1},
+  pages={184-191}
 }
 ```
